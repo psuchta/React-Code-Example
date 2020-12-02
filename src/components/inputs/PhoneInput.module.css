@@ -1,0 +1,63 @@
+div.inputGroup {
+  position: relative;
+  color: #3d3d3d;
+}
+
+.inputGroup > span {
+  display: block;
+  padding-top: 20px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 147.6%;
+}
+
+div.error {
+  position: absolute;
+  font-size: 11px;
+  font-weight: normal;
+  color: #ff1010;
+}
+
+.phoneInputContainer {
+  border: none !important;
+  outline: none !important;
+  border-bottom: solid 1px #e5e5e5 !important;
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+.phoneInputErrorContainer {
+  composes: phoneInputContainer;
+  border-bottom: solid 1px #ff1010 !important;
+}
+
+.phoneInputFocusedContainer {
+  composes: phoneInputContainer;
+  border-bottom: solid 1px #ffb000 !important;
+}
+
+.phoneInput {
+  width: 100% !important;
+  border: none !important;
+  color: #0b4178 !important;
+}
+
+.phoneInput:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.phoneInputButton {
+  background-color: inherit !important;
+  border: none !important;
+}
+
+.phoneDropdown li:hover:not(.searchClass) {
+  background-color: rgb(255, 176, 0, 0.1) !important;
+}
+:global(li.country.highlight) {
+  background-color: rgb(255, 176, 0, 0.1) !important;
+}

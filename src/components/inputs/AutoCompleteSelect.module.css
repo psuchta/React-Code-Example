@@ -1,0 +1,60 @@
+.selectGroup {
+  position: relative;
+}
+
+.select {
+  max-height: 380px;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  text-overflow: ellipsis;
+
+  position: absolute;
+  right: 0px;
+  left: 0px;
+
+  border-radius: 3px;
+  box-shadow: 7px 15px 18px -8px rgba(87, 87, 87, 0.5);
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.option {
+  font-size: 15px;
+  line-height: 24px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  border-bottom: solid 1px #ececec;
+}
+
+.hide {
+  display: none;
+}
+
+.option:hover {
+  background-color: rgb(255, 176, 0, 0.1);
+}
+.option > div {
+  max-width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.option > div > p {
+  margin-left: 11px;
+  margin-bottom: 0;
+  color: #3d3d3d;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 779px) {
+  .select {
+    width: 305px;
+  }
+}

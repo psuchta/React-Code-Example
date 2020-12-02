@@ -1,0 +1,118 @@
+.pageContainer {
+  padding-top: 120px;
+  background-color: #f4f4f4;
+  color: #0b4178;
+  font-family: Poppins;
+  padding-bottom: 100px;
+}
+
+.body {
+  max-width: 634px;
+  margin: auto;
+  padding: 50px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: solid 1px rgba(194, 207, 221, 0.5);
+}
+
+.bodyHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bodyHeader span {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.09;
+  color: #0b4178;
+}
+
+.bodyHeader button {
+  border-radius: 3px;
+  border: solid 1px #ffb000;
+  color: #ffb000;
+  background-color: #ffffff;
+  width: 132px;
+  height: 40px;
+  font-size: 16px;
+}
+
+.signInMobileBtn {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+}
+
+.signInMobileBtn p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #0b4178;
+  text-decoration: none;
+}
+
+.bodyContent p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #0b4178;
+}
+
+.signInMobileBtn svg {
+  fill: #0b4178;
+}
+
+.inline {
+  display: flex;
+}
+
+.inline > div {
+  flex: 1;
+}
+
+.inline > div:nth-of-type(1) {
+  margin-right: 20px;
+}
+
+.termsAndSubmit {
+  margin-top: 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.termsAndSubmit > span {
+  font-size: 12px;
+  color: black;
+}
+
+.termsAndSubmit > span > span {
+  color: #0b4178;
+  cursor: pointer;
+}
+
+.termsAndSubmit > button {
+  border-radius: 3px;
+  border: solid 1px #0b4178;
+  color: #ffffff;
+  background-color: #0b4178;
+  width: 132px;
+  height: 40px;
+  font-size: 16px;
+}
+
+@media (max-width: 800px) {
+  .inline {
+    flex-direction: column;
+  }
+
+  .inline > div:nth-of-type(1) {
+    margin-right: 0;
+  }
+
+  .termsAndSubmit > button {
+    font-size: 12px;
+  }
+}

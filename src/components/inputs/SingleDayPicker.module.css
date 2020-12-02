@@ -1,0 +1,40 @@
+.arrowNext {
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  right: 22px;
+  width: 26px;
+  height: 26px;
+  padding-left: 3px;
+  background: #c2cfdd;
+  border-radius: 50%;
+  top: 0;
+  text-align: center;
+}
+
+.arrowPrev {
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  left: 22px;
+  width: 26px;
+  height: 26px;
+  background: #c2cfdd;
+  border-radius: 50%;
+  top: 0;
+  text-align: center;
+}
+
+.arrowNext > svg g,
+.arrowPrev > svg g {
+  fill: #fff;
+}
+.dayPicker {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  border-radius: 3px;
+  box-shadow: 7px 15px 18px -8px rgba(87, 87, 87, 0.5);
+  border: solid 1px #ffffff;
+  background-color: #ffffff;
+}
